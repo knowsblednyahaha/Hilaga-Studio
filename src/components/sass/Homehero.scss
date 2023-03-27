@@ -1,0 +1,16 @@
+.home-hero-container{
+    width: 100%;
+    height: 95vh;
+    position: relative;
+}
+.text-header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: 9em;
+        font-weight: 300;
+    }
+}
