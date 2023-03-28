@@ -5,7 +5,7 @@ export default function About() {
         <div className="about-container">
             <p>We are Hilaga Studio. We are a creative team, 
                 and every very day, we work to share beauty 
-                by making holistic products experiences</p>
+                by making holistic approach products experiences</p>
         </div>
     )
 }
