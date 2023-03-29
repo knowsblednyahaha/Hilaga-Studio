@@ -7,7 +7,7 @@ export default function Navbar() {
                 <img src="/logo.png" alt="" />
             </div>
             <div className="menu-item">
-                HIRE US
+                <span>HIRE US</span>
             </div>
         </header>
     )
