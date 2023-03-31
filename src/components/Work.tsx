@@ -1,7 +1,11 @@
-
+import "../components/sass/Work.scss"
 
 export default function Work() {
   return (
-    <div>Work</div>
+    <div className="work-container">
+        <div>
+            
+        </div>
+    </div>
   )
 }
