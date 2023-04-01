@@ -1,7 +1,7 @@
 .navbar-container{
     width: 100%;
     height: 10vh;
-    border-bottom: 1px solid black;
+    // border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,9 +13,26 @@
     }
 }
 .menu-item {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+
+    ul{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    li {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        list-style: none;
+        font-weight: 500;
+    }
     span{
         display: inline-block;
         position: relative;
+        font-size: .9em;
     }
     span::after {
         content: '';
@@ -23,7 +40,7 @@
         width: 100%;
         transform: scaleX(0);
         height: 2px;
-        bottom: 0;
+        bottom: -3px;
         left: 0;
         background-color: black;
         transform-origin: bottom right;
