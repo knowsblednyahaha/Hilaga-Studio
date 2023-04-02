@@ -1,6 +1,6 @@
 .home-hero-container{
     width: 100%;
-    height: 85vh;
+    height: 87vh;
     position: relative;
 }
 .text-header{
@@ -11,15 +11,16 @@
     align-items: center;
     padding: 0 5%;
     h1 {
-        font-size: 12em;
+        font-size: 10em;
         font-weight: 200;
         text-align: center;
-        // letter-spacing: 20px;
+        letter-spacing: 30px;
+        padding: .25em 0;
     }
 }
 .video {
     width: 100%;
-    height: 40vh;
+    height: 35vh;
     overflow: hidden;
 
     video {
@@ -28,13 +29,49 @@
         object-fit: cover;
     }
 }
-.about{
-    padding: 2% 0 0 5%;
-    width: 44%;
-    p {
-        font-size: 1.75em;
+.text-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2% 5%;
+    .about{
+        width: 35%;
+        p {
+            font-size: 1.5em;
+        }
+    }
+    .social{
+        padding: 1em 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        span{
+            display: inline-block;
+            position: relative;
+            font-weight: 400;
+            cursor: pointer;
+            // overflow:hidden;
+            white-space:pre-line; 
+        }
+        span::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -3px;
+            left: 0;
+            background-color: black;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        span:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
     }
 }
+
 /* for mobile device */
 @media screen and (max-device-width: 767px){}
 /* fortablets and small laptop screens */

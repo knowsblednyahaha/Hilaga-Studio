@@ -15,12 +15,19 @@ export default function Homehero() {
             <div className="video">
                 <video src="/video.mp4" autoPlay loop muted ></video>
             </div>
-            <div className="about">
-                <p>
-                    We are Hilaga Studio. We are a creative team, 
-                    and every very day, we work to share beauty 
-                    by making holistic approach products experiences
-                </p>
+            <div className="text-container">
+                <div className="about">
+                    <p>
+                        We are Hilaga Studio. We are a creative team, 
+                        and every very day, we work to share beauty 
+                        by making holistic approach products experiences
+                    </p>
+                </div>
+                <div className="social">
+                    <span>Facebook</span>
+                    <span>Instagram</span>
+                    <span>Youtube</span>
+                </div>
             </div>
         </div>
     )
