@@ -11,8 +11,9 @@ export default function Navbar() {
                     <li>About</li>
                     <li>Works</li>
                     <li>Contact</li>
+                    {/* <span>HIRE US</span> */}
                 </ul>
-                <span>HIRE US</span>
+                
             </div>
         </header>
     )

@@ -1,32 +1,38 @@
 .home-hero-container{
     width: 100%;
-    height: auto;
+    height: 85vh;
     position: relative;
-    border-bottom: 1px solid black;
-    
 }
 .text-header{
     width: 100%;
-    height: 70vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 5%;
     h1 {
-        font-size: 8.5em;
-        font-weight: 400;
+        font-size: 10em;
+        font-weight: 200;
         text-align: center;
+        letter-spacing: 20px;
     }
 }
 .video {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     overflow: hidden;
 
     video {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+.about{
+    padding: 2% 0 0 5%;
+    width: 50%;
+    p {
+        font-size: 1.75em;
     }
 }
 /* for mobile device */
