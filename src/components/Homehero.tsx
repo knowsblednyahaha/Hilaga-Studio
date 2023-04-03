@@ -24,9 +24,15 @@ export default function Homehero() {
                     </p>
                 </div>
                 <div className="social">
-                    <span>Facebook</span>
-                    <span>Instagram</span>
-                    <span>Youtube</span>
+                    <div>
+                        <span>Facebook</span>
+                    </div>
+                    <div>
+                        <span>Instagram</span>
+                    </div>
+                    <div>
+                        <span>Youtube</span>
+                    </div>
                 </div>
             </div>
         </div>
