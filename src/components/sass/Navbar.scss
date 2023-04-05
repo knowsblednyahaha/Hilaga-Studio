@@ -56,6 +56,10 @@
         transform: scaleX(1);
         transform-origin: bottom left;
     }
+    a {
+        color: #000;
+        text-decoration: none;
+    }
 }
 /* for mobile device */
 @media screen and (max-device-width: 767px){
