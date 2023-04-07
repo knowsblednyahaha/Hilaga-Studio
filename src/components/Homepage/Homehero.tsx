@@ -1,4 +1,4 @@
-import "../components/sass/Homehero.scss"
+import "../sass/Homehero.scss"
 
 import LocomotiveScroll from 'locomotive-scroll';
 import { useEffect } from "react";
