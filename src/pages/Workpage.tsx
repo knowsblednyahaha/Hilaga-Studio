@@ -5,7 +5,7 @@ export default function Workpage() {
     return (
         <>
             <Navbar/>
-
+            
             <Footer/>
         </>
     )
