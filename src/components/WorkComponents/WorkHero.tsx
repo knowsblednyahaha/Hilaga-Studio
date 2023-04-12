@@ -1,7 +1,11 @@
-import React from 'react'
+import "../sass/Workhero.scss"
 
 export default function WorkHero() {
     return (
-        <div>WorkHero</div>
+        <div className='work-hero-container'>
+            <div className="text-header">
+                    <h1>Hilaga Works</h1>
+            </div>
+        </div>
     )
 }
