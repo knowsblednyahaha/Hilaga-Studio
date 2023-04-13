@@ -2,7 +2,23 @@
     width: 100%;
     height: 87vh;
     position: relative;
+    .work-image-container{
+        position: relative;
+        height: 50vh;
+        .work-image{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            img{
+                height: 50vh;
+                
+            }
+        }
+    }
 }
+
 /* for mobile device */
 @media screen and (max-device-width: 767px){}
 /* fortablets and small laptop screens */
