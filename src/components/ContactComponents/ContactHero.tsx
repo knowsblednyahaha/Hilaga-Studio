@@ -7,15 +7,29 @@ export default function ContactHero() {
             <h1>Hilaga Studio</h1>
       </div>
       <div className="contact-hero-container">
-        <div className="social-media-item-container">
-          <div className="social-media-item">
-              <span>facebook</span>
+        <div className="contact-info-item-container">
+          <div className="contact-info-item">
+            <div className="social-media-item">
+                <span>Address:</span>
+            </div>
+            <div className="social-media-item">
+                <span>Tel:</span>
+            </div>
+            <div className="social-media-item">
+                <span>Mail:</span>
+            </div>
           </div>
-          <div className="social-media-item">
-              <span>instagram</span>
-          </div>
-          <div className="social-media-item">
-              <span>youtube</span>
+          <br />
+          <div className="social-media-item-container">
+            <div className="social-media-item">
+                <span>Facebook:</span>
+            </div>
+            <div className="social-media-item">
+                <span>Instagram:</span>
+            </div>
+            <div className="social-media-item">
+                <span>Youtube:</span>
+            </div>
           </div>
         </div>
         <div className="input-field-container">
