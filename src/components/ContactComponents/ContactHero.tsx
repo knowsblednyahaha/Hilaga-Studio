@@ -19,15 +19,21 @@ export default function ContactHero() {
           </div>
         </div>
         <div className="input-field-container">
-          <div className="input-field">
-              <input type="text" />
-          </div>
-          <div className="input-field">
-              <input type="text" />
-          </div>
-          <div className="input-field">
-              <textarea name="" id=""></textarea>
-          </div>
+          <form action="">
+            <div className="input-field">
+                <input placeholder="Name" type="text"/>
+            </div>
+            <div className="input-field">
+                <input placeholder="Email" type="text" />
+            </div>
+            <div className="input-field">
+                <textarea placeholder="Message" name="" id=""></textarea>
+            </div>
+            <div className="input-field">
+                <button>Send</button>
+            </div>
+
+          </form>
         </div>
       </div> 
     </div>

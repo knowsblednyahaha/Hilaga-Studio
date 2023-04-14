@@ -16,6 +16,15 @@ export default function WorkHero() {
                 <div className="work-image"> 
                     <img src="/1.jpg" alt="" />
                 </div>
+                <div className="work-image">
+                    <img src="/1.jpg" alt="" />
+                </div>
+                <div className="work-image">
+                    <img src="/1.jpg" alt="" />
+                </div>
+                <div className="work-image"> 
+                    <img src="/1.jpg" alt="" />
+                </div>
             </div>
         </div>
     )

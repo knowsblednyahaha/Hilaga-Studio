@@ -7,6 +7,33 @@
         justify-content: space-between;
         padding: 0 5%;
     }
+    .input-field-container {
+        width: 60%;
+        .input-field {
+            padding-bottom: 2em;
+        }
+    }
+}
+input, textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #000;
+    font-size: 3rem;
+    color: #000;
+}
+textarea {
+    resize: none;
+    height: 1.5em;
+}
+button {
+    margin: 0 auto;
+    padding: 1em 1.5em;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 15px;
+    font-size: 1.25em;
+    color: #FFF;
 }
 /* for mobile device */
 @media screen and (max-device-width: 767px){}

@@ -5,15 +5,18 @@
     .work-image-container{
         position: relative;
         height: 50vh;
+        scroll-snap-type: x mandatory;
+        display: flex;
+        overflow: hidden;
         .work-image{
             width: 100%;
-            position: absolute;
-            top: 0;
+            padding: 0 3em;
+            // position: absolute;
             display: flex;
             justify-content: center;
+            scroll-snap-align: center;
             img{
                 height: 50vh;
-                
             }
         }
     }
