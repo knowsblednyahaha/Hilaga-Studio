@@ -32,7 +32,6 @@ export default function ContactHero() {
             <div className="input-field">
                 <button>Send</button>
             </div>
-
           </form>
         </div>
       </div> 
