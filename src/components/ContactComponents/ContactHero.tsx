@@ -10,16 +10,15 @@ export default function ContactHero() {
         <div className="contact-info-item-container">
           <div className="contact-info-item">
             <div className="social-media-item">
-                <span>Address:</span>
+                <span>Address: 179 Upper Bonifacio St, Baguio, 2600 Benguet</span>
             </div>
             <div className="social-media-item">
-                <span>Tel:</span>
+                <span>Tel: 0969 609 1484</span>
             </div>
             <div className="social-media-item">
-                <span>Mail:</span>
+                <span>Mail: <a href=""> hilagastudios@gmail.com </a></span>
             </div>
           </div>
-          <br />
           <div className="social-media-item-container">
             <div className="social-media-item">
                 <span>Facebook:</span>
