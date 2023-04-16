@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gsap": "^3.11.5",
     "localforage": "^1.10.0",
     "locomotive-scroll": "^4.1.4",
     "match-sorter": "^6.3.1",
