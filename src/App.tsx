@@ -4,6 +4,9 @@ import Homepage from "./pages/Homepage"
 import Aboutpage from './pages/Aboutpage'
 import Workpage from './pages/Workpage'
 import Contactpage from './pages/Contactpage'
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 function App() {

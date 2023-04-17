@@ -2,6 +2,10 @@ import "../sass/Abouthero.scss"
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 export default function AboutHero() {
   return (
