@@ -9,8 +9,8 @@ export default function WorkHero() {
     var settings = {
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
+        centerMode: true,
+        autoplay: false,
         dots: true,
         infinite: true,
         adaptiveHeight: true,
