@@ -2,10 +2,26 @@ import "../sass/Abouthero.scss"
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+gsap.registerPlugin(ScrollTrigger);
 
 
 export default function AboutHero() {
+
+  let sections = gsap.utils.toArray(".panel");
+
+  gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".container",
+      pin: true,
+      scrub: 1,
+      // snap: 1 / (sections.length - 1),
+      end: () => "+=3000"
+    }
+  });
+
+
   return (
     <div className="container">
       <div className='about-hero-container panel'>
