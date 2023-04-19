@@ -6,6 +6,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 .logo {
     cursor: pointer;
