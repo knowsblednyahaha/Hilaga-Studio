@@ -1,32 +1,21 @@
-// html {
-// 	overflow-y: scroll;
-// 	height: 100%;
-// 	-webkit-overflow-scrolling: touch;
-// 	// overflow-scrolling: touch;
-// }
-// body {
-// 	overflow-y: visible;
-// 	position: relative;
-//     height: unset;
-// }
-// html, body {
-// 	overflow-x: hidden;
-// 	margin: 0;
-// }
 .wrapper{
     overflow-x:hidden;
+    margin-top: 8vh;
+    height: 87vh;
 }
 .container{
     width: 200vw;
     height: 87vh;
     display: flex;
     flex-wrap: nowrap;
-    margin-top: 8vh;
+    overflow-x:hidden;
 }
-.about-hero-container{
+.panel{
     width: 100vw;
     height: 87vh;
-    position: relative;
+}
+.about-hero-container{
+    // position: relative;
     padding: 0 2.5%;
     .text-header{
         padding: 0 !important;
@@ -44,7 +33,7 @@
     }
     .img-1{
         position: absolute;
-        bottom: -3em;
+        bottom: 0;
         right: 10%;
         img{
             display: flex;
@@ -55,6 +44,13 @@
             object-fit: cover;
         }
     }
+}
+.about-section-2{
+    width: 100vw;
+    height: 87vh;
+    position: relative;
+    padding: 0 2.5%;
+    z-index: 20;
 }
 .footer-container {
     justify-content: flex-start !important;
