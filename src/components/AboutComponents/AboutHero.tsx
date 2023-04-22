@@ -2,68 +2,48 @@ import "../sass/Abouthero.scss"
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 
 export default function AboutHero() {
-  useEffect(() => {
-    let sections = gsap.utils.toArray(".panel");
-    const container = document.getElementById(".container");
-    const wrapper = document.getElementById(".wrapper");
-    // const wrapper = useRef(null);
-    // const container = useRef(null);
-  
-    gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: container,
-        pin: wrapper,
-        scrub: 1,
-        pinSpacing: true,
-        markers: true,
-        snap: 1 / (sections.length - 1),
-        end: () => "+=" + window.innerWidth
-      }
-    });
-  },[])
+  const component = useRef(null);
+  const slider = useRef(null);
+
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      let panels = gsap.utils.toArray(".panel");
+      gsap.to(panels, {
+        xPercent: -100 * (panels.length - 1),
+        ease: "none",
+        scrollTrigger: {
+          trigger: slider.current,
+          pin: true,
+          scrub: 1,
+          snap: 1 / (panels.length - 1),
+          end: () => "+=" + window.innerWidth,
+          // markers: true
+        }
+      });
+    }, component);
+    return () => ctx.revert();
+  });
   return (
-    <div className="wrapper">
-      <div className="container">
-        <div className='about-hero-container panel'>
-          <div className="text-header">
-              <h1>Hilaga About</h1>
-          </div>
-          <div className="text-info-1">
-              <p>Lorem Ipsum is simply dummy text of the 
-                printing and typesetting industry. Lorem 
-                Ipsum has been the industry's standard 
-                dummy text ever since the 1500s, when an 
-                unknown printer took a galley of type and 
-                scrambled </p>
-          </div>
-          <div className="img-1">
-            <img src="/1.jpg" alt="image-1" />
+    <div className="wrapper" ref={component}>
+      <div ref={slider} className="container">
+        <div className="description panel blue">
+          <div>
+            SCROLL DOWN
+            <div className="scroll-down">
+              <div className="arrow"></div>
+            </div>
           </div>
         </div>
-        <div className='about-hero-container panel'>
-          <div className="text-header">
-              <h1>Hilaga About</h1>
-          </div>
-          <div className="text-info-1">
-              <p>Lorem Ipsum is simply dummy text of the 
-                printing and typesetting industry. Lorem 
-                Ipsum has been the industry's standard 
-                dummy text ever since the 1500s, when an 
-                unknown printer took a galley of type and 
-                scrambled </p>
-          </div>
-          <div className="img-1">
-            <img src="/1.jpg" alt="image-1" />
-          </div>
-        </div>
+        <div className="panel red">ONE</div>
+        <div className="panel orange">TWO</div>
+        <div className="panel purple">THREE</div>
       </div>
+      <div className="lastContainer">Last Container</div>
     </div>
   )
 }
