@@ -1,65 +1,8 @@
-html {
-  overflow-y: scroll;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
-}
-body {
-  overflow-y: visible;
-  position: relative;
-  overflow-x: hidden;
-}
-html,
-body {
-  margin: 0;
-}
 .wrapper{
   // overflow-x: hidden;
   width: 100vw;
   height: 87vh;
   margin-top: 8vh;
-}
-.container {
-  width: 600vw;
-  height: 87vh;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 8vh;
-}
-
-.firstContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 87vh;
-  background: yellow;
-}
-
-.lastContainer {
-  display: flex;
-  height: 87vh;
-  background: yellow;
-}
-
-.panel {
-  width: 100vw;
-  height: 87vh;
-}
-.red {
-  background: blue;
-}
-.red {
-  background: red;
-}
-.orange {
-  background: orange;
-}
-.purple {
-  background: purple;
-}
-.blue {
-  background-color: blue;
 }
 
 .footer-container {
