@@ -11,12 +11,12 @@
         // overflow: hidden;
         .work-image{
             width: 100%;
-            padding: 0 3em;
+            padding: 0;
             // position: absolute;
             display: flex;
             justify-content: center;
             scroll-snap-align: center;
-            margin: 0 5%;
+            // margin: 0 10%;
             img{
                 height: 50vh;
                 width: 30vw;
