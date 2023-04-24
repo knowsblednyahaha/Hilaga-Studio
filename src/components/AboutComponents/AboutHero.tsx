@@ -36,7 +36,9 @@ export default function AboutHero() {
   //   return () => ctx.revert();
   // });
   return (
-    <div className="wrapper" ref={component}>
+    <div className="wrapper" 
+    // ref={component}
+    >
       
     </div>
   )
