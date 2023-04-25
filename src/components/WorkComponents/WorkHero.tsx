@@ -9,12 +9,11 @@ export default function WorkHero() {
     var settings = {
         slidesToShow: 3,
         slidesToScroll: 1,
-        centerMode: true,
-        autoplay: false,
+        asNavFor: settings,
         dots: true,
-        infinite: true,
-        adaptiveHeight: true,
-        arrows: false
+        focusOnSelect: true,
+        centerMode: true,
+        centerPadding: 0
     };
     return (
         <div className='work-hero-container'>
