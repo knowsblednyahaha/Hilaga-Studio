@@ -1,43 +1,64 @@
 import "../sass/Workhero.scss"
-import React from "react";
+import React, { useEffect, useRef } from "react";
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 export default function WorkHero() {
-    var settings = {
+    const settings:any = {
         slidesToShow: 3,
         slidesToScroll: 1,
-        asNavFor: settings,
         dots: true,
-        focusOnSelect: true,
+        // focusOnSelect: true,
+        infinite: true,
         centerMode: true,
         centerPadding: 0
     };
+    
+    const slider: any = useRef(null);
+
+    
+    function scroll(e: { wheelDelta: number; }){
+        if (slider === null)
+            return 0;
+    
+        e.wheelDelta > 0 ? (
+            slider.current.slickNext()
+        ) : (
+            slider.current.slickPrev()
+        );
+    };
+    useEffect(() => {
+        window.addEventListener("wheel", scroll, true);
+    
+        return () => {
+            window.removeEventListener("wheel", scroll, true);
+        };
+    }, []);
     return (
         <div className='work-hero-container'>
             <div className="text-header">
                     <h1>Hilaga Works</h1>
             </div>
             <div className="work-image-container">
-                <Slider {...settings}>
-                    <div className="work-image">
+                <Slider {...settings} ref={slider}>
+                    <div className="work-image 1">
                         <img src="/1.jpg" alt="" />
                     </div>
-                    <div className="work-image">
+                    <div className="work-image 2">
                         <img src="/1.jpg" alt="" />
                     </div>
-                    <div className="work-image">
+                    <div className="work-image 3">
                         <img src="/1.jpg" alt="" />
                     </div>
-                    <div className="work-image">
+                    <div className="work-image 4">
                         <img src="/1.jpg" alt="" />
                     </div>
-                    <div className="work-image">
+                    <div className="work-image 5 ">
                         <img src="/1.jpg" alt="" />
                     </div>
-                    <div className="work-image">
+                    <div className="work-image 6 ">
                         <img src="/1.jpg" alt="" />
                     </div>
                 </Slider>

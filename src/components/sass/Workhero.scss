@@ -8,7 +8,7 @@
         height: 50vh;
         scroll-snap-type: x mandatory;
         // display: flex;
-        // overflow: hidden;
+        overflow: hidden;
         .work-image{
             width: 100%;
             padding: 0;
@@ -17,10 +17,12 @@
             justify-content: center;
             scroll-snap-align: center;
             // margin: 0 10%;
+            outline: none;
             img{
-                height: 50vh;
-                width: 30vw;
+                height: 47vh;
+                width: 100%;
                 object-fit: cover;
+                padding: 0 1em;
             }
         }
     }
