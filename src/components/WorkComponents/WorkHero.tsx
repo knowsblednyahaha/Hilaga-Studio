@@ -23,7 +23,7 @@ export default function WorkHero() {
         if (slider === null)
             return 0;
     
-        e.wheelDelta > 0 ? (
+        e.wheelDelta < 0 ? (
             slider.current.slickNext()
         ) : (
             slider.current.slickPrev()
