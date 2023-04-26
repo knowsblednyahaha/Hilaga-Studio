@@ -19,7 +19,7 @@ export default function WorkHero() {
     const slider: any = useRef(null);
 
     
-    function scroll(e){
+    function scroll(e : any){
         if (slider === null)
             return 0;
     
