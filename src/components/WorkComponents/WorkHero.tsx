@@ -19,7 +19,7 @@ export default function WorkHero() {
     const slider: any = useRef(null);
 
     
-    function scroll(e: { wheelDelta: number; }){
+    function scroll(e){
         if (slider === null)
             return 0;
     
@@ -30,10 +30,10 @@ export default function WorkHero() {
         );
     };
     useEffect(() => {
-        window.addEventListener("wheel", scroll, true);
+        window.addEventListener("wheel", scroll , true);
     
         return () => {
-            window.removeEventListener("wheel", scroll, true);
+            window.removeEventListener("wheel", scroll , true);
         };
     }, []);
     return (
