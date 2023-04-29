@@ -1,3 +1,12 @@
+.locomotive-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  height: 200vh;
+}
 .main-container{
   // overflow-x: hidden;
   width: 100vw;
